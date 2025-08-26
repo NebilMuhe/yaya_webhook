@@ -32,10 +32,10 @@ go mod tidy
 ### 3. Create Configuration File
 Copy the example configuration and customize it:
 ```bash
-touch config.yaml
+touch example_config.yaml
 ```
 
-Edit `config.yaml` with your settings:
+Edit `example_config.yaml` with your settings:
 ```yaml
 secret_key: secret
 port: 8080
@@ -210,7 +210,7 @@ CREATE TABLE webhooks (
 ## ⚙️ Configuration
 
 ### Environment Variables
-- `CONFIG_FILE`: Path to configuration file (default: `./config.yaml`)
+- `CONFIG_FILE`: Path to configuration file (default: `./example_config.yaml`)
 
 ### Configuration Options
 | Key | Type | Default | Description |
@@ -238,7 +238,7 @@ yaya_wallet_webhook/
 ├── main.go                 # Server setup and configuration
 ├── handler.go              # Webhook handling logic
 ├── model.go                # Data structures
-├── config.yaml             # Your configuration (create this)
+├── example_config.yaml             # Your configuration (create this)
 ├── generate_payload_signature.sh  # Signature generation script
 ├── go.mod                  # Go module file
 ├── go.sum                  # Go dependencies checksum
